@@ -11,11 +11,14 @@ public class Local implements Serializable {
     Double latitud;
     Double longitud;
     String web;
+    String imagen;
+    String comentario;
+    boolean isContestant;
 
     public Local() {
     }
 
-    public Local(int id, String type, String nombre, String direccion, String telefono, Double latitud, Double longitud, String web) {
+    public Local(int id, String type, String nombre, String direccion, String telefono, Double latitud, Double longitud, String web, String imagen) {
         this.id = id;
         this.type = type;
         this.nombre = nombre;
@@ -24,6 +27,36 @@ public class Local implements Serializable {
         this.latitud = latitud;
         this.longitud = longitud;
         this.web = web;
+        this.imagen = imagen;
+        this.comentario = "";
+    }
+
+    public Local(int id, String type, String nombre, String direccion, String telefono, Double latitud, Double longitud, String web, String imagen, String comentario) {
+        this.id = id;
+        this.type = type;
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.telefono = telefono;
+        this.latitud = latitud;
+        this.longitud = longitud;
+        this.web = web;
+        this.imagen = imagen;
+        this.comentario = comentario;
+        this.isContestant = false;
+    }
+
+    public Local(boolean isContestant, int id, String type, String nombre, String direccion, String telefono, Double latitud, Double longitud, String web, String imagen, String comentario) {
+        this.id = id;
+        this.type = type;
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.telefono = telefono;
+        this.latitud = latitud;
+        this.longitud = longitud;
+        this.web = web;
+        this.imagen = imagen;
+        this.comentario = comentario;
+        this.isContestant = isContestant;
     }
 
     public int getId() {
@@ -88,5 +121,29 @@ public class Local implements Serializable {
 
     public void setWeb(String web) {
         this.web = web;
+    }
+
+    public String getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
+    }
+
+    public String getComentario() {
+        return comentario;
+    }
+
+    public void setComentario(String comentario) {
+        this.comentario = comentario;
+    }
+
+    public boolean isContestant() {
+        return isContestant;
+    }
+
+    public void setContestant(boolean contestant) {
+        isContestant = contestant;
     }
 }
