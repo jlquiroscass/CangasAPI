@@ -65,7 +65,7 @@ public class Locales {
             add(new Local(59, Tipo.ALOJAMIENTO, "La Posada del Chano", "Posada de Besullo, 7", "610 346 595", 43.18717860369996, -6.615840196609497, "laposadadelchano.es", "images/locales/piccangas.jpg", ""));
             add(new Local(59, Tipo.ALOJAMIENTO, "Aptos. Casa La Fonte", "Oballo, 25", "663 987 335", 43.05984231924607, -6.644572019577026, "apartamentoslafonte.es", "images/locales/piccangas.jpg", ""));
             add(new Local(60, Tipo.ALOJAMIENTO, "Montañas de Pumar", "Pumar de las Montañas", "984 249 598", 43.171273128899394, -6.657092571258545, "hotelruralpumar.com", "images/locales/piccangas.jpg", ""));
-            add(new Local(61, Tipo.TIENDA, "Kiosko Chocofresh", "C/Mayor 3-5", "686 760 379", 43.176229099837215, -6.549613093080552, "", "images/locales/dieteticanarcea.jpg", ""));
+            add(new Local(61, Tipo.TIENDA, "Kiosko Chocofresh", "C/Mayor 3-5", "686 760 379", 43.176229099837215, -6.549613093080552, "", "images/locales/piccangas.jpg", ""));
         }};
         return locales;
     }
