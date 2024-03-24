@@ -15,6 +15,9 @@ public class Local implements Serializable {
     String comentario;
     boolean isContestant;
 
+    boolean inProgress;
+
+
     public Local() {
     }
 
@@ -29,6 +32,7 @@ public class Local implements Serializable {
         this.web = web;
         this.imagen = imagen;
         this.comentario = "";
+        this.inProgress = false;
     }
 
     public Local(int id, String type, String nombre, String direccion, String telefono, Double latitud, Double longitud, String web, String imagen, String comentario) {
@@ -43,6 +47,22 @@ public class Local implements Serializable {
         this.imagen = imagen;
         this.comentario = comentario;
         this.isContestant = false;
+        this.inProgress = false;
+    }
+
+    public Local(int id, String type, String nombre, String direccion, String telefono, Double latitud, Double longitud, String web, String imagen, String comentario, boolean inProgress) {
+        this.id = id;
+        this.type = type;
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.telefono = telefono;
+        this.latitud = latitud;
+        this.longitud = longitud;
+        this.web = web;
+        this.imagen = imagen;
+        this.comentario = comentario;
+        this.isContestant = false;
+        this.inProgress = inProgress;
     }
 
     public Local(boolean isContestant, int id, String type, String nombre, String direccion, String telefono, Double latitud, Double longitud, String web, String imagen, String comentario) {
@@ -57,6 +77,7 @@ public class Local implements Serializable {
         this.imagen = imagen;
         this.comentario = comentario;
         this.isContestant = isContestant;
+        this.inProgress = false;
     }
 
     public int getId() {
@@ -145,5 +166,13 @@ public class Local implements Serializable {
 
     public void setContestant(boolean contestant) {
         isContestant = contestant;
+    }
+
+    public boolean isInProgress() {
+        return inProgress;
+    }
+
+    public void setInProgress(boolean inProgress) {
+        this.inProgress = inProgress;
     }
 }
